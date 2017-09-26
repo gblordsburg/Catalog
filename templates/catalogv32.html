@@ -1,0 +1,34 @@
+{% extends "main.html" %}
+{% block content %}
+
+    <div class="col-md-2">
+        <h2> Categor1ies </h2>
+        {% if categories !=[] %}
+        <ul>
+            {% for category in categories %}
+            <li>
+                <a href="{{url_for('showCategory', category_name = category.name)}}">
+                    {{category.name}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+
+    <div class="col-md-8">
+        <h2> Latest Items </h2>
+        {% if items !=[] %}
+        <ul>
+            {% for item in items %}
+            <li>
+                <a href="{{url_for('showCategory', category_name = category.name) }}">
+                    {{item.name}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+{% block content %}
+
+    <div class="category-list col-sm-4">
+        <h2> Categories </h2>
+        <ul>
+            {% for category in categories %}
+            <li class="link">
+                <a href="{{url_for('showCategory', category_name = category.name)}}">
+                    {{category.name}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="items-list col-sm-8">
+        <h2> {{category.name}} Items </h2>
+        <ul>
+            {% for item in items %}
+            <li class="link">
+                <a href="{{url_for('showItem', category_name = item.category_name, item_name = item.name)}}">
+                    {{item.name}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+{% endblock %}

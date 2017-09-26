@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+{% block content %}
+<body>
+    <div class="item-container">
+
+        <div class="category_item">
+
+            <div class="category-name">
+                <h2> {{category.name}} </h2>
+            </div>
+
+            <div class="item-name brown-text">
+                <h3> {{item.name}} </h3>
+            </div>
+
+            <div class="item-description grey-text">
+                <p> {{item.description}}</p>
+            </div>
+
+        </div>
+
+        <div class="edit-delete-links">
+            <a href="{{ url_for('showCategory', category_name = category_name) }}">Back</a>
+        </div>
+
+    </div>
+</body>
+
+{% endblock %}

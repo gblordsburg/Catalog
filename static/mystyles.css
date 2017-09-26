@@ -1,0 +1,231 @@
+* {
+	font-family: "Helvetica Neue Bold", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+body {
+	background-color: #d7e3ef;
+}
+
+header {
+	background-color: #3b73b1;
+}
+
+h1 {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	color: #51453B;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 24px;
+	color: #42C3C9;
+	line-height: 29px;
+}
+
+h3 {
+	font-size: 18px;
+	color: #4A4A4A;
+	line-height: 23px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ p {
+ 	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+ 	font-weight: 400;
+ }
+
+ strong {
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+ }
+
+ a {
+ 	font-size: 14px;
+ 	color: #0093B9;
+ 	line-height: 17px;
+ }
+
+a:hover {
+	color: #89abd0;
+}
+
+.container {
+	width: 66.67%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.headerspan {
+	width: 100%;
+	text-align: center;
+}
+
+.row {
+}
+
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.form-group {
+	margin: auto;
+}
+
+.category-list {
+	min-height: 220px;
+	background-color: #EFE3D7;
+}
+
+.items-list {
+	min-height: 220px;
+	background-color: #EFE3D7;
+}
+
+.login-window {
+	margin: auto
+}
+
+.error {
+	color: red;
+}
+
+.brown-text {
+	color: #51453B;
+}
+
+.grey-text {
+	color: #7B7573;
+}
+
+.padding-top {
+	padding-top: 30px;
+}
+
+.padding-bottom {
+	padding-bottom: 30px;
+}
+
+.margin-right {
+	margin-right: 30px;
+}
+
+.padding-none {
+	padding: 0;
+}
+
+.login-btn {
+	margin-right: 6px;
+}
+
+.signup-btn {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.cancel-btn {
+	margin-left: 5px;
+}
+
+
+.bkgrnd-color {
+	background-color: #EFE3D7;
+}
+
+.btn {
+	padding: 20px;
+	border-color: #9FB80A;
+	border-width: 2px;
+	color: #9FB80A;;
+}
+
+.btn:hover {
+	border-color: #9FB80A;
+}
+
+.btn.delete {
+	border-color: #aaaaaa;
+	color: #aaaaaa;
+}
+
+.btn.delete:hover {
+	border-color: #aaaaaa;
+	color: red;
+}
+
+.glyphicon {
+	margin-right: 10px;
+}
+
+.top-item {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.top-item p {
+	margin-bottom: 0;
+	line-height: 16px;
+}
+
+.top-item a {
+	margin-bottom: 0;
+	line-height: 16px;
+	font-size: 16px;
+	color: #7B7573;
+	font-weight: 400;
+}
+
+.divider {
+	height: 15px;
+}
+
+.divider.blue {
+	background-color: #42C3C9;
+}
+
+.divider.green {
+	background-color: #9FB80A;
+}
+
+.banner.main {
+	height: 150px;
+	background: url("/static/top-banner.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner.menu {
+	height: 150px;
+	background-color: #E1E17F;
+}
+
+.banner.profile {
+	height: 150px;
+	background-color: #A6E8EB;
+}
+
+.banner h1 {
+	margin: 45px 0;
+}
+
+.item {
+	background: #F0F0F0;
+	padding: 20px;
+	margin: 20px;
+	margin-left: -20px;
+}

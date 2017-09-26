@@ -1,0 +1,42 @@
+{% extends "main.html" %}
+{% block content %}
+<form action="{{url_for('showLogin')}}" method="POST">
+    <div class="form-group">
+
+        <div class="">
+            <h2> Login </h2>
+        </div>
+
+        <div class="error-message">
+            {% if error %}
+            <p class="error"><strong>Error:</strong> {{ error }}</p>
+            {% endif %}
+        </div>
+
+        <label for="name">Username:</label>
+        <input type="text" maxlength="50" class="form-control" name="username">
+
+        <label for="description">Password:</label>
+        <input class="form-control" maxlength="50" class="form-control" name="password"></input>
+
+        <div class="btn-group">
+            <button type="submit" class="login-btn btn btn-default" id="submit" type="submit">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Login
+            </button>
+
+            <a href = "{{url_for('newUser')}}">
+                <button class="btn btn-default signup-btn">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Sign-up
+                </button>
+            </a>
+
+            <a href = "{{url_for('showCatalog')}}">
+                <button class="btn btn-default delete cancel-btn">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel
+                </button>
+            </a>
+        </div>
+
+    </div>
+</form>
+{% endblock %}
