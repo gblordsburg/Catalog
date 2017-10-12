@@ -9,11 +9,11 @@
 
         <label for="name">Name:</label>
         <input type="text" maxlength="50" class="form-control" name="name"
-               value="" placehoder="{{item.name}}">
+               value="" placeholder={{item.name}}>
 
         <label for="description">Description:</label>
         <textarea class="form-control" maxlength="250" rows="3" name="description"
-                  placeholder="{{item.description}}" value="">
+                  placeholder={{item.description}} value="">
         </textarea>
 
     </div>
@@ -23,7 +23,7 @@
         </button>
 
         <a href = "{{url_for('showCategory', category_name = category_name)}}">
-            <button class="btn btn-default delete">
+            <button type="button" class="btn btn-default delete">
                 <span class="glyphicon glyphicon-remove" aria-hidden="true">
                 </span> Cancel
             </button>

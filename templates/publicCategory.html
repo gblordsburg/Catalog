@@ -5,7 +5,7 @@
         <h2> Categories </h2>
         <ul>
             {% for category in categories %}
-            <li class="link">
+            <li class="list-item-link">
                 <a href="{{url_for('showCategory', category_name = category.name)}}">
                     {{category.name}}
                 </a>
@@ -15,10 +15,10 @@
     </div>
 
     <div class="items-list col-sm-8">
-        <h2> {{category.name}} Items </h2>
+        <h2> {{category.name}} Items ({{numitems}} items)</h2>
         <ul>
             {% for item in items %}
-            <li class="link">
+            <li class="list-item-link">
                 <a href="{{url_for('showItem', category_name = item.category_name, item_name = item.name)}}">
                     {{item.name}}
                 </a>

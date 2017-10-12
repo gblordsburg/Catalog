@@ -9,20 +9,22 @@
 
     <body>
         <header class="container-fluid">
-            <div class="row headerspan">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-6 text-left">
-                    <h1> Catalog App </h1>
-                </div>
+                <div class="headerspan">
+                    <div class="title text-left">
+                        <h1> Catalog App </h1>
+                    </div>
 
-                <div class="col-sm-2 text-right">
-                    {%if 'username' not in session %}
-                    <a href="{{url_for('showLogin')}}">Login </a>
-                    {% else %}
-                    <a href="{{url_for('logout')}}">Logout </a>
-                    {% endif %}
+                    <div class="links-container">
+                        <div class="login-signup-links text-right">
+                            {%if 'username' not in session %}
+                            <a href="{{url_for('showLogin')}}">Login </a>
+                            {% else %}
+                            <a href="{{url_for('logout')}}">Logout </a>
+                            {% endif %}
+                            <a href="{{url_for('newUser')}}">| Signup </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-2"></div>
             </div>
         </header>
 
