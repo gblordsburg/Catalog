@@ -1,0 +1,33 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+bleach = "*"
+certifi = "*"
+chardet = "*"
+click = "*"
+django = "*"
+flask = "*"
+"html5lib" = "*"
+idna = "*"
+itsdangerous = "*"
+"jinja2" = "*"
+markupsafe = "*"
+"pep8" = "*"
+pytz = "==2017.3"
+requests = "*"
+"urllib3" = "*"
+virtualenv = "*"
+webencodings = "*"
+werkzeug = "*"
+gunicorn = "*"
+six = "*"
+
+
+[dev-packages]
+

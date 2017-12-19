@@ -44,14 +44,14 @@ def showLogin():
         username = request.form['username']
         password = request.form['password']
         user = session.query(User).filter_by(username=username).first()
-        print username, password, user.username
+        print(username, password, user.username)
         if username is None or password is None:
             error = 'Username and Password Required'
         if user is None or not user.verify_password(password):
             error = 'Invalid username or password'
         if user.verify_password(password):
             login_session['username'] = username
-            print jsonify({'username': user.username}), 201
+            print(jsonify({'username': user.username}), 201)
             return redirect(url_for('showCatalog'))
         return render_template('login.html', STATE=state, error=error)
     else:
@@ -80,7 +80,7 @@ def newUser():
         user.hash_password(password)
         session.add(user)
         session.commit()
-        print jsonify({'username': user.username}), 201
+        print(jsonify({'username': user.username}), 201)
         return redirect(url_for('showCatalog'))
     else:
         return render_template('newUser.html')
@@ -155,7 +155,7 @@ def gconnect():
     if result['issued_to'] != CLIENT_ID:
         response = make_response(
             json.dumps("Token's client ID does not match app's."), 401)
-        print "Token's client ID does not match app's."
+        print("Token's client ID does not match app's.")
         response.headers['Content-Type'] = 'application/json'
         return response
 
@@ -198,7 +198,7 @@ def gconnect():
     output += login_session['picture']
     output += ' " style = "width: 300px; height: 300px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;"> '
     flash("you are now logged in as %s" % login_session['username'])
-    print "done!"
+    print("done!")
     return output
 
 
@@ -328,7 +328,7 @@ def editItem(category_name, item_name):
     category = session.query(Category).filter_by(name=category_name).one()
     if request.method == 'POST':
         if request.form['name']:
-            print request.form['name']
+            print(request.form['name'])
             editedItem.name = request.form['name']
         if request.form['description']:
             editedItem.description = request.form['description']
