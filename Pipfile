@@ -27,6 +27,7 @@ webencodings = "*"
 werkzeug = "*"
 gunicorn = "*"
 six = "*"
+sqlalchemy = "*"
 
 
 [dev-packages]
