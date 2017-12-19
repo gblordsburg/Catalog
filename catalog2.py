@@ -106,7 +106,8 @@ def catalogJSON():
     return jsonify(categories=[category.serialize for category in categories])
 
 #Following third party authentication and authorization taken from
-#Authentication and Authorization coursework
+#Authentication and Authorization coursework of Udacity Fullstack
+#Nanodegree
 
 
 @app.route('/gconnect', methods=['POST'])
@@ -284,7 +285,7 @@ def showItem(category_name, item_name):
     if 'username' not in login_session:
         return render_template(
                     'publicItem.html',
-                    categor=category,
+                    category=category,
                     category_name=category_name,
                     item=item,
                     item_name=item_name)
