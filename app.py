@@ -3,7 +3,7 @@ from flask import redirect, jsonify, url_for, flash, abort
 from flask import session as login_session
 from sqlalchemy import create_engine, asc, desc, and_
 from sqlalchemy.orm import sessionmaker
-from db_setup import Base, Category, Item, User
+from db_setup2 import Base, Category, Item, User
 import random
 import string
 from oauth2client.client import flow_from_clientsecrets
